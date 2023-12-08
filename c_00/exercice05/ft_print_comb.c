@@ -18,7 +18,6 @@ void ft_print_comb(void)
 
 	while (nb1 <= '7')
 	{
-
 		while (nb2 <= '8')
 		{
 			while (nb3 <= '9')
