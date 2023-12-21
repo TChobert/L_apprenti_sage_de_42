@@ -16,6 +16,7 @@ char *ft_strcat(char *dest, char *src)
 	while (src[countsrc] != '\0')
 	{
 		dest[countdest] = src[countsrc];
+
 		++countdest;
 		++countsrc;
 	}
