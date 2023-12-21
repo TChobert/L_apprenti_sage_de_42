@@ -2,25 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-char *ft_strcpy(char *dest, char *src)
-{
-	signed int count;
-				count = 0;
-
-	while (src[count] != '\0')
-	{
-		int count2;
-			count2 = 0;
-
-		dest[count] = src[count];
-
-		++count2;
-	}
-	dest[count] = '\0';
-
-	return dest;
-}
-
 char *ft_strcat(char *dest, char *src)
 {
 	signed int countdest;
@@ -39,7 +20,7 @@ char *ft_strcat(char *dest, char *src)
 		++countsrc;
 	}
 	dest[countdest] = '\0';
-	return dest;
+	return (dest);
 }
 
 int	main(void)
