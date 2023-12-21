@@ -38,8 +38,7 @@ char	*ft_strstr(char *str, char *to_find)
 				return found_adr;
 			}	
 			++count2;
-		}
-		return no_match;	
+		}	
 	}
 	return no_match;
 }
@@ -47,7 +46,7 @@ char	*ft_strstr(char *str, char *to_find)
 int main(void)
 {
 	char str[] = "Chat";
-	char to_find[] = "at";
+	char to_find[] = "t";
 
 	printf("%s\n", ft_strstr(str, to_find));
 
