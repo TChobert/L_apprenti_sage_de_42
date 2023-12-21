@@ -11,6 +11,9 @@ char	*ft_strstr(char *str, char *to_find)
 	char *found_adr = NULL;
 	char *no_match = NULL;
 
+	if (to_find[0] == '\0')
+		return str;
+		
 	while (str[count] != to_find[0] && str[count] != '\0')
 		++count;
 
@@ -21,9 +24,8 @@ char	*ft_strstr(char *str, char *to_find)
 		while (str[count + count2] == to_find[count2])
 		{
 			if (to_find[count2] == '\0')
-			{
 				return found_adr;
-			}	
+
 			++count2;
 		}	
 	}
@@ -33,7 +35,7 @@ char	*ft_strstr(char *str, char *to_find)
 int main(void)
 {
 	char str[] = "Chat";
-	char to_find[] = "t";
+	char to_find[] = "at";
 
 	printf("%s\n", ft_strstr(str, to_find));
 
