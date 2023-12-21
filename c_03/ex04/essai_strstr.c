@@ -2,19 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-int ft_strcmp(char *s1, char *s2)
-{
-	signed int	count;
-		count = 0;
-
-	while (s1[count] == s2[count])
-	{
-		return 1;
-		++count;
-	}
-	return 0;
-}
-
 char	*ft_strstr(char *str, char *to_find)
 {
 	signed int	count;
